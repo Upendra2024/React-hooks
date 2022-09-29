@@ -1,9 +1,9 @@
 import React,{useState} from 'react';
 
- const StateTWo = ()=> {
+ export const StateTwo = ()=> {
   const [state,setState] = useState([]);
 
- const clickHandler =() =>{
+const clickHandler =() =>{
     setState([...state,
       {
         id:state.length,
@@ -17,9 +17,9 @@ import React,{useState} from 'react';
       <button onClick={clickHandler}>Add</button>
       <ul>
         {
-          state.map(item =>{
+          state.map(item =>(
             <li key = {item.id}>{item.value}</li>
-          })
+          ))
         }
 
       </ul>
@@ -27,4 +27,3 @@ import React,{useState} from 'react';
     </div>
   )
 }
-export default StateTWo;

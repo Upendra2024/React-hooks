@@ -8,8 +8,8 @@ export default function App() {
       <h1>Hooks Exmples</h1>
       <p>here we take previous state  of properties(as a spred operator not need in class comp) while updatiiong state properties</p>
       {/* <StateOne/> */}
-      {/* <StateTwo/> */}
-
+        <StateTwo/>
+     
     </div>
   );
 }
