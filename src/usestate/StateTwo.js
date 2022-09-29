@@ -1,13 +1,13 @@
 import React,{useState} from 'react';
 
-export const StateTWo = ()=> {
+ const StateTWo = ()=> {
   const [state,setState] = useState([]);
 
  const clickHandler =() =>{
     setState([...state,
       {
         id:state.length,
-        value : Math.floor(Math.random * 10) + 1
+        value : Math.floor(Math.random() * 10) + 1
       
        } ])
   };
@@ -27,3 +27,4 @@ export const StateTWo = ()=> {
     </div>
   )
 }
+export default StateTWo;
