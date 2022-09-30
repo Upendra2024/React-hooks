@@ -4,6 +4,7 @@ import {StateOne} from './usestate/StateOne';
 import {StateTwo} from './usestate/StateTwo';
 import {EffectOne} from './useeffect/EffectOne';
 import {EffectTwo} from './useeffect/EffectTwo';
+import {MouseCounter} from './useeffect/MouseCounter';
 export default function App() {
   return (
     <div>
@@ -13,7 +14,8 @@ export default function App() {
       {/* <StateTwo/> */}
 
       {/* <EffectOne/> */}
-     <EffectTwo/>
+     {/* <EffectTwo/> */}
+     <MouseCounter/>
     </div>
   );
 }

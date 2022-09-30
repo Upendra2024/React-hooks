@@ -12,6 +12,11 @@ export const EffectTwo = () =>{
   useEffect(()=>{
     console.log('Effect is called')
     window.addEventListener('mousemove',logMousePosition)
+
+    return ()=>{
+      console.log('Effect un Mounted')
+      window.removeEventListener('mousemove',logMousePosition)
+    }
   },[])
   return(
     <div>
