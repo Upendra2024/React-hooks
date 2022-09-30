@@ -12,7 +12,7 @@ export const EffectTwo = () =>{
   useEffect(()=>{
     console.log('Effect is called')
     window.addEventListener('mousemove',logMousePosition)
-  })
+  },[])
   return(
     <div>
     X - {X}
