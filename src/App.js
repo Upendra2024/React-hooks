@@ -3,6 +3,7 @@ import "./style.css";
 import {StateOne} from './usestate/StateOne';
 import {StateTwo} from './usestate/StateTwo';
 import {EffectOne} from './useeffect/EffectOne';
+import {EffectTwo} from './useeffect/EffectTwo';
 export default function App() {
   return (
     <div>
@@ -10,8 +11,9 @@ export default function App() {
       <p>here we take previous state  of properties(as a spred operator not need in class comp) while updatiiong state properties</p>
       {/* <StateOne/> */}
       {/* <StateTwo/> */}
-      <EffectOne/>
-     
+
+      {/* <EffectOne/> */}
+     <EffectTwo/>
     </div>
   );
 }
