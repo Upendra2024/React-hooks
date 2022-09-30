@@ -5,6 +5,7 @@ import {StateTwo} from './usestate/StateTwo';
 import {EffectOne} from './useeffect/EffectOne';
 import {EffectTwo} from './useeffect/EffectTwo';
 import {MouseCounter} from './useeffect/MouseCounter';
+import {IncorrDependency} from './useeffect/IncorrDependency';
 export default function App() {
   return (
     <div>
@@ -15,7 +16,9 @@ export default function App() {
 
       {/* <EffectOne/> */}
      {/* <EffectTwo/> */}
-     <MouseCounter/>
+     {/* <MouseCounter/> */}
+     <IncorrDependency/>
+
     </div>
   );
 }
