@@ -1,5 +1,6 @@
 import React from 'react';
 import {UserContext,ChannelContext} from '../App';
+import {ComponentE} from './ComponentE'
 export const ComponentC = () =>{
   return(
     <div>
@@ -18,7 +19,7 @@ export const ComponentC = () =>{
           }
         }
       </UserContext.Consumer>
-
+       <ComponentE/>
     </div>
   )
 }
