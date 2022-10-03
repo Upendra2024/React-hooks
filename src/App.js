@@ -6,6 +6,7 @@ import {EffectOne} from './useeffect/EffectOne';
 import {EffectTwo} from './useeffect/EffectTwo';
 import {MouseCounter} from './useeffect/MouseCounter';
 import {IncorrDependency} from './useeffect/IncorrDependency';
+import{FetchData} from './useeffect/FetchData';
 export default function App() {
   return (
     <div>
@@ -17,7 +18,9 @@ export default function App() {
       {/* <EffectOne/> */}
      {/* <EffectTwo/> */}
      {/* <MouseCounter/> */}
-     <IncorrDependency/>
+     {/* <IncorrDependency/> */}
+     <FetchData/>
+
 
     </div>
   );
