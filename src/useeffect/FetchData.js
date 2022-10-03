@@ -8,6 +8,11 @@ export const FetchData = () => {
   //fetching individul data in the endpoint through controlled component
   const [post, setPost] = useState({});
   const [id, setId] = useState('');
+  const [idFromButtonClick,setIdFromButtonClick] = useState(1);
+
+const clickHandler =()=>{
+   setIdFromButtonClick(id);
+ }
 
   // useEffect(() => {
   //   axios
@@ -23,7 +28,7 @@ export const FetchData = () => {
 
   useEffect(() => {
     axios
-      .get(`https://jsonplaceholder.typicode.com/posts/${id}`)
+      .get(`https://jsonplaceholder.typicode.com/posts/${idFromButtonClick}`)
       .then((res) => {
         console.log(res)
         setPost(res.data);
@@ -31,11 +36,12 @@ export const FetchData = () => {
       .catch((err) => {
         console.log(err);
       });
-  }, [id]);
+  }, [idFromButtonClick]);
 
   return (
     <div>
       <input type="text" value={id} onChange={(e) => setId(e.target.value)} />
+      <button type='button'  onClick={clickHandler}>Fetch Post</button>
       <div>{post.title}</div>
       {/* <ul>
         {posts.map((post) => (
