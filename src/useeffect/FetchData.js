@@ -7,7 +7,7 @@ export const FetchData = () => {
 
   //fetching individul data in the endpoint through controlled component
   const [post, setPost] = useState({});
-  const [id, setId] = useState();
+  const [id, setId] = useState('');
 
   // useEffect(() => {
   //   axios
@@ -25,6 +25,7 @@ export const FetchData = () => {
     axios
       .get(`https://jsonplaceholder.typicode.com/posts/${id}`)
       .then((res) => {
+        console.log(res)
         setPost(res.data);
       })
       .catch((err) => {
