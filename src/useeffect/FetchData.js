@@ -26,6 +26,8 @@ const clickHandler =()=>{
   //     });
   // }, []);
 
+
+  //if we give id in the place of idFormButtonClick  it will respond with respect to input field
   useEffect(() => {
     axios
       .get(`https://jsonplaceholder.typicode.com/posts/${idFromButtonClick}`)
