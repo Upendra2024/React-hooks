@@ -8,6 +8,7 @@ import { MouseCounter } from './useeffect/MouseCounter';
 import { IncorrDependency } from './useeffect/IncorrDependency';
 import { FetchData } from './useeffect/FetchData';
 import { ComponentC } from './usecontext/ComponentC';
+import { CounterOne } from './usereducer/CounterOne';
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -28,11 +29,13 @@ export default function App() {
       {/* <IncorrDependency/> */}
       {/* <FetchData/> */}
 
-      <UserContext.Provider value={'Upendra'}>
+      {/* <UserContext.Provider value={'Upendra'}>
         <ChannelContext.Provider value={'UICoder'}>
           <ComponentC />
         </ChannelContext.Provider>
-      </UserContext.Provider>
+      </UserContext.Provider> */}
+
+      <CounterOne />
     </div>
   );
 }
