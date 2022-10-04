@@ -10,7 +10,7 @@ import { FetchData } from './useeffect/FetchData';
 import { ComponentC } from './usecontext/ComponentC';
 import { CounterOne } from './usereducer/CounterOne';
 import { CounterTwo } from './usereducer/CounterTwo';
-
+import { CounterThree } from './usereducer/CounterThree';
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -38,7 +38,8 @@ export default function App() {
       </UserContext.Provider> */}
 
       {/* <CounterOne /> */}
-      <CounterTwo/>
+      {/* <CounterTwo/> */}
+      <CounterThree />
     </div>
   );
 }
