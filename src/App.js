@@ -9,6 +9,8 @@ import { IncorrDependency } from './useeffect/IncorrDependency';
 import { FetchData } from './useeffect/FetchData';
 import { ComponentC } from './usecontext/ComponentC';
 import { CounterOne } from './usereducer/CounterOne';
+import { CounterTwo } from './usereducer/CounterTwo';
+
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -35,7 +37,8 @@ export default function App() {
         </ChannelContext.Provider>
       </UserContext.Provider> */}
 
-      <CounterOne />
+      {/* <CounterOne /> */}
+      <CounterTwo/>
     </div>
   );
 }
