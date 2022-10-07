@@ -15,6 +15,7 @@ import { ComponentA } from './usereducer/ComponentA';
 import { ComponentB } from './usereducer/ComponentB';
 import { ComponentC } from './usereducer/ComponentC';
 import {ReducerFetch} from './usereducer/ReducerFetch';
+import {ParentComp} from './usecallback/ParentComp';
 
 
 export const UserContext = React.createContext();
@@ -69,7 +70,11 @@ export default function App() {
         <ComponentB />
         <ComponentC />
       </CountContext.Provider> */}
-        <ReducerFetch/>
+        {/* <ReducerFetch/> */}
+
+
+        <ParentComp/>
+
     </div>
   );
 }

@@ -3,15 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "axios": "1.1.2",
-    "debug": "^4.3.4",
-    "events": "^3.3.0",
-    "fetch": "1.1.0",
-    "http": "^0.0.0",
-    "https": "^1.0.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "zlib": "^1.0.5"
+    "button": "^1.1.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
