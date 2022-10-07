@@ -14,6 +14,8 @@ import { CounterThree } from './usereducer/CounterThree';
 import { ComponentA } from './usereducer/ComponentA';
 import { ComponentB } from './usereducer/ComponentB';
 import { ComponentC } from './usereducer/ComponentC';
+import {NormalFetch} from './usereducer/NormalFetch';
+
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -59,14 +61,16 @@ export default function App() {
       {/* <CounterOne /> */}
       {/* <CounterTwo/> */}
       {/* <CounterThree /> */}
-      <CountContext.Provider
+      {/* <CountContext.Provider
         value={{ countState: count, countDispatch: dispatch }}
       >
         Count : {count}
         <ComponentA />
         <ComponentB />
         <ComponentC />
-      </CountContext.Provider>
+      </CountContext.Provider> */}
+      <NormalFetch/>
+
     </div>
   );
 }
