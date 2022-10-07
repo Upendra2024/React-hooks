@@ -29,7 +29,7 @@ const reducer = (state,action) =>{
 }
 
 export const ReducerFetch = () =>{
-const [state,dispatch] = useReducer(initialState,reducer)
+const [state,dispatch] = useReducer(reducer,initialState)
 
 useEffect(()=>{
  axios.get('https://jsonplaceholder.typicode.com/posts/1')

@@ -69,7 +69,7 @@ export default function App() {
         <ComponentB />
         <ComponentC />
       </CountContext.Provider> */}
-        {/* <ReducerFetch/> */}
+        <ReducerFetch/>
     </div>
   );
 }
