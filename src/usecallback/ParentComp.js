@@ -19,7 +19,7 @@ export const ParentComp = () =>{
     <div>
       <Title/>
       <Count  text = "Age" Count ={age}/>
-      <Button onClick = {}/>
+      <Button onClick = {o}/>
 
     </div>
   )
