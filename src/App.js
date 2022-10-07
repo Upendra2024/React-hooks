@@ -14,7 +14,7 @@ import { CounterThree } from './usereducer/CounterThree';
 import { ComponentA } from './usereducer/ComponentA';
 import { ComponentB } from './usereducer/ComponentB';
 import { ComponentC } from './usereducer/ComponentC';
-import {NormalFetch} from './usereducer/NormalFetch';
+import {ReducerFetch} from './usereducer/ReducerFetch';
 
 
 export const UserContext = React.createContext();
@@ -69,8 +69,7 @@ export default function App() {
         <ComponentB />
         <ComponentC />
       </CountContext.Provider> */}
-      <NormalFetch/>
-
+        <ReducerFetch/>
     </div>
   );
 }
